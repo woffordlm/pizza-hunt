@@ -1,14 +1,12 @@
 const router = require('express').Router();
-
 const {
-    getAllPizza,
-    getPizzaById,
-    createPizza,
-    updatePizza,
-    deletePizza
-  } = require('../../controller/pizza-controller');
+  getAllPizza,
+  getPizzaById,
+  createPizza,
+  updatePizza,
+  deletePizza
+} = require('../../controllers/pizza-controller');
 
-// Set up GET all and POST at /api/pizzas
 // /api/pizzas
 router
   .route('/')
